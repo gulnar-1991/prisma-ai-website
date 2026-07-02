@@ -1,0 +1,6 @@
+{
+  "name": "Prisma",
+  "description": "A cinematic, dark and moody landing page with warm cream accents for Prisma, a state-of-the-art pediatric therapy clinic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
