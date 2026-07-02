@@ -25,14 +25,14 @@ export default function HeroSection({ onNavClick, onOpenInquiry, id }: HeroSecti
   };
 
   return (
-    <section id={id} className="relative w-full h-screen p-4 md:p-6 bg-black flex flex-col justify-between overflow-hidden select-none">
+    <section id={id} className="relative w-full h-screen p-4 md:p-6 bg-transparent flex flex-col justify-between overflow-hidden select-none">
       {/* Rounded inset container */}
       <div className="relative w-full h-full rounded-2xl md:rounded-[2rem] overflow-hidden bg-[#050505] flex flex-col justify-between border border-white/5 shadow-2xl">
         
         {/* Background Video */}
         <video
           id="hero-bg-video"
-          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"
+          src="/hero-video.mp4"
           autoPlay
           loop
           muted
@@ -49,7 +49,7 @@ export default function HeroSection({ onNavClick, onOpenInquiry, id }: HeroSecti
         {/* Navbar */}
         <nav 
           id="navbar-pill"
-          className="absolute top-0 left-1/2 -translate-x-1/2 z-20 bg-black rounded-b-2xl md:rounded-b-3xl border-x border-b border-white/10 px-4 py-2.5 md:px-8 shadow-lg flex items-center"
+          className="absolute top-0 left-1/2 -translate-x-1/2 z-20 bg-transparent rounded-b-2xl md:rounded-b-3xl border-x border-b border-white/10 px-4 py-2.5 md:px-8 shadow-lg flex items-center"
         >
           <div className="flex items-center gap-3 sm:gap-6 md:gap-12 lg:gap-14">
             {navItems.map((item, idx) => (
@@ -77,23 +77,23 @@ export default function HeroSection({ onNavClick, onOpenInquiry, id }: HeroSecti
             <div className="lg:col-span-8 flex flex-col justify-end">
               <WordsPullUp
                 id="hero-title-words"
-                text="Prisma"
+                text="Star Therapy"
                 showAsterisk={true}
-                className="text-[26vw] sm:text-[24vw] md:text-[22vw] lg:text-[20vw] xl:text-[19vw] 2xl:text-[20vw] font-medium leading-[0.85] tracking-[-0.07em] select-none"
+                className="text-[18vw] sm:text-[16vw] md:text-[14vw] lg:text-[12vw] xl:text-[11vw] 2xl:text-[12vw] font-medium leading-[0.85] tracking-[-0.07em] select-none"
                 style={{ color: "#E1E0CC" } as React.CSSProperties}
               />
             </div>
 
             {/* Right 4 columns - Description paragraph + CTA */}
-            <div className="lg:col-span-4 flex flex-col items-start gap-6 sm:gap-8 mb-4">
+            <div className="lg:col-span-4 flex flex-col items-start gap-4 sm:gap-6 mb-4">
               <motion.p
                 id="hero-description"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ ...customTransition, delay: 0.5 }}
-                className="text-primary/70 text-xs sm:text-sm md:text-base leading-[1.2] tracking-wide max-w-md"
+                className="text-white text-xs sm:text-sm md:text-base leading-relaxed tracking-wide max-w-xs font-medium drop-shadow-lg"
               >
-                Prisma is a premier clinical studio of occupational therapists, speech pathologists, and childhood specialists bound not by rigid formulas but by warm passion and play to unlock every child's potential.
+                Star Therapy is a pediatric therapy clinic specializing in occupational, speech, and developmental therapy. We combine clinical expertise with compassionate, play-based approaches to help every child reach their fullest potential.
               </motion.p>
 
               <motion.button
@@ -103,8 +103,8 @@ export default function HeroSection({ onNavClick, onOpenInquiry, id }: HeroSecti
                 transition={{ ...customTransition, delay: 0.7 }}
                 className="group flex items-center gap-2 hover:gap-3 bg-primary text-black font-medium text-sm sm:text-base rounded-full pl-5 pr-2 py-1.5 sm:pl-6 sm:pr-2.5 sm:py-2 hover:bg-[#eae8db] transition-all duration-300 shadow-md cursor-pointer select-none"
               >
-                <span>Begin the journey</span>
-                <div className="bg-black rounded-full w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
+                <span>Start therapy journey</span>
+                <div className="bg-transparent rounded-full w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-[#DEDBC8]" />
                 </div>
               </motion.button>

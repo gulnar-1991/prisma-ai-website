@@ -14,11 +14,11 @@ export default function FeaturesSection({ id }: FeaturesSectionProps) {
   const isGridInView = useInView(containerRef, { once: true, margin: "-100px" });
 
   const heading1 = [
-    { text: "Clinical-grade therapies for visionary growth.", className: "text-[#E1E0CC] font-normal" }
+    { text: "Comprehensive pediatric therapy services.", className: "text-gray-500 font-normal" }
   ];
 
   const heading2 = [
-    { text: "Built for pure development. Guided by compassion.", className: "text-gray-500 font-normal" }
+    { text: "Evidence-based care. Child-centered approach.", className: "text-gray-500 font-normal" }
   ];
 
   // Card staggered entrance animation variants
@@ -37,26 +37,26 @@ export default function FeaturesSection({ id }: FeaturesSectionProps) {
   };
 
   const checklist1 = [
-    "Tailored sensory gym exercises",
-    "Vestibular & proprioceptive play",
-    "Fine & gross motor coordination",
-    "Self-regulation milestone tracking"
+    "Sensory integration therapy",
+    "Motor skill development",
+    "Adaptive play environments",
+    "Progress tracking & family coaching"
   ];
 
   const checklist2 = [
-    "Interactive speech playgrounds",
-    "Expressive vocabulary expansion",
-    "Social communication coaching"
+    "Speech-language pathology",
+    "Communication & language skills",
+    "Social interaction coaching"
   ];
 
   const checklist3 = [
-    "Zero-noise distraction shielding",
-    "Generative ambient calming drone",
-    "Intelligent family progress sync"
+    "Tranquil therapy spaces",
+    "Personalized care plans",
+    "Parent-child partnership model"
   ];
 
   return (
-    <section id={id} className="relative min-h-screen bg-black py-24 px-4 sm:px-6 md:px-8 flex flex-col justify-center overflow-hidden select-none">
+    <section id={id} className="relative min-h-screen bg-transparent py-24 px-4 sm:px-6 md:px-8 flex flex-col justify-center overflow-hidden select-none">
       
       {/* Subtle background noise overlay */}
       <div className="bg-noise absolute inset-0 opacity-[0.15] pointer-events-none z-0" />
@@ -92,7 +92,7 @@ export default function FeaturesSection({ id }: FeaturesSectionProps) {
         >
           {/* Full video background */}
           <video
-            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_133058_0504132a-0cf3-4450-a370-8ea3b05c95d4.mp4"
+            src="/dreamina-hero.mp4"
             autoPlay
             loop
             muted
@@ -104,7 +104,7 @@ export default function FeaturesSection({ id }: FeaturesSectionProps) {
           
           <div className="relative z-10 mt-auto">
             <h3 className="text-xl sm:text-2xl font-medium tracking-tight text-[#E1E0CC] group-hover:translate-x-1 transition-transform duration-300">
-              Your child's growth space.
+              Welcoming therapy spaces.
             </h3>
           </div>
         </motion.div>
@@ -116,22 +116,17 @@ export default function FeaturesSection({ id }: FeaturesSectionProps) {
           variants={cardVariants}
           initial="hidden"
           animate={isGridInView ? "visible" : "hidden"}
-          className="relative bg-[#212121] rounded-2xl border border-white/5 shadow-2xl flex flex-col justify-between p-6 sm:p-8 group cursor-pointer hover:border-primary/20 transition-all duration-300 min-h-[360px] lg:h-full"
+          className="relative bg-[#2a4a6d] rounded-2xl border border-white/5 shadow-2xl flex flex-col justify-between p-6 sm:p-8 group cursor-pointer hover:border-primary/20 transition-all duration-300 min-h-[360px] lg:h-full"
         >
           {/* Top content */}
           <div className="flex flex-col gap-5">
-            <div className="flex justify-between items-start">
-              <img
-                src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171918_4a5edc79-d78f-4637-ac8b-53c43c220606.png&w=1280&q=85"
-                alt="Storyboard Icon"
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded object-cover select-none border border-white/5"
-              />
+            <div className="flex justify-end items-start">
               <span className="text-xs font-mono text-primary/40 tracking-widest font-semibold">01</span>
             </div>
             
             <div>
               <h3 className="text-lg sm:text-xl font-semibold text-[#E1E0CC] tracking-tight mb-4">
-                Sensory Integration.
+                Occupational Therapy.
               </h3>
               
               {/* Checklist */}
@@ -160,22 +155,17 @@ export default function FeaturesSection({ id }: FeaturesSectionProps) {
           variants={cardVariants}
           initial="hidden"
           animate={isGridInView ? "visible" : "hidden"}
-          className="relative bg-[#212121] rounded-2xl border border-white/5 shadow-2xl flex flex-col justify-between p-6 sm:p-8 group cursor-pointer hover:border-primary/20 transition-all duration-300 min-h-[360px] lg:h-full"
+          className="relative bg-[#2a4a6d] rounded-2xl border border-white/5 shadow-2xl flex flex-col justify-between p-6 sm:p-8 group cursor-pointer hover:border-primary/20 transition-all duration-300 min-h-[360px] lg:h-full"
         >
           {/* Top content */}
           <div className="flex flex-col gap-5">
-            <div className="flex justify-between items-start">
-              <img
-                src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171741_ed9845ab-f5b2-4018-8ce7-07cc01823522.png&w=1280&q=85"
-                alt="Critique Icon"
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded object-cover select-none border border-white/5"
-              />
+            <div className="flex justify-end items-start">
               <span className="text-xs font-mono text-primary/40 tracking-widest font-semibold">02</span>
             </div>
             
             <div>
               <h3 className="text-lg sm:text-xl font-semibold text-[#E1E0CC] tracking-tight mb-4">
-                Speech & Language.
+                Speech Therapy.
               </h3>
               
               {/* Checklist */}
@@ -204,22 +194,17 @@ export default function FeaturesSection({ id }: FeaturesSectionProps) {
           variants={cardVariants}
           initial="hidden"
           animate={isGridInView ? "visible" : "hidden"}
-          className="relative bg-[#212121] rounded-2xl border border-white/5 shadow-2xl flex flex-col justify-between p-6 sm:p-8 group cursor-pointer hover:border-primary/20 transition-all duration-300 min-h-[360px] lg:h-full"
+          className="relative bg-[#2a4a6d] rounded-2xl border border-white/5 shadow-2xl flex flex-col justify-between p-6 sm:p-8 group cursor-pointer hover:border-primary/20 transition-all duration-300 min-h-[360px] lg:h-full"
         >
           {/* Top content */}
           <div className="flex flex-col gap-5">
-            <div className="flex justify-between items-start">
-              <img
-                src="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260405_171809_f56666dc-c099-4778-ad82-9ad4f209567b.png&w=1280&q=85"
-                alt="Immersion Icon"
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded object-cover select-none border border-white/5"
-              />
+            <div className="flex justify-end items-start">
               <span className="text-xs font-mono text-primary/40 tracking-widest font-semibold">03</span>
             </div>
             
             <div>
               <h3 className="text-lg sm:text-xl font-semibold text-[#E1E0CC] tracking-tight mb-4">
-                Mindful Play.
+                Family Support.
               </h3>
               
               {/* Checklist */}
