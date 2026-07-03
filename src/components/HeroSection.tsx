@@ -112,19 +112,6 @@ export default function HeroSection({ onNavClick, onOpenInquiry, id }: HeroSecti
 
           </div>
 
-          {/* Mascot Animation - Hidden on mobile, shows on large screens */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="hidden lg:block absolute bottom-0 right-12 w-48 h-48 z-5"
-          >
-            <img
-              src="/mascot-blink.webp"
-              alt="Star Therapy Mascot"
-              className="w-full h-full object-contain"
-            />
-          </motion.div>
         </div>
 
       </div>
